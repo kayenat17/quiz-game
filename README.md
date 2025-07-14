@@ -1,4 +1,4 @@
-# 🎯 Quiz Game
+ Quiz Game
 
 A modern, interactive quiz game built with HTML, CSS, and JavaScript. Test your knowledge with multiple-choice questions and see your score at the end!
 
@@ -22,15 +22,7 @@ A modern, interactive quiz game built with HTML, CSS, and JavaScript. Test your 
 5. **View Results**: See your final score and performance message
 6. **Play Again**: Click "Play Again" to restart the quiz
 
-## File Structure
 
-```
-quiz-game/
-├── index.html      # Main HTML structure
-├── style.css       # Modern styling and animations
-├── script.js       # Game logic and functionality
-└── README.md       # This file
-```
 
 ## Technologies Used
 
@@ -38,55 +30,5 @@ quiz-game/
 - **CSS3**: Modern styling with gradients, animations, and responsive design
 - **JavaScript (ES6+)**: Game logic, DOM manipulation, and event handling
 
-## Browser Compatibility
 
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-- Mobile browsers
 
-## Customization
-
-### Adding New Questions
-
-To add more questions, edit the `questions` array in `script.js`:
-
-```javascript
-const questions = [
-    {
-        question: "Your question here?",
-        options: ["Option 1", "Option 2", "Option 3", "Option 4"],
-        correct: 0  // Index of correct answer (0-3)
-    },
-    // Add more questions...
-];
-```
-
-### Styling Changes
-
-Modify `style.css` to customize:
-- Colors and gradients
-- Fonts and typography
-- Animations and transitions
-- Layout and spacing
-
-## Getting Started
-
-1. Download or clone the files
-2. Open `index.html` in your web browser
-3. Start playing!
-
-No server setup required - this is a pure client-side application.
-
-## Future Enhancements
-
-- Timer for each question
-- Different difficulty levels
-- Question categories
-- High score tracking
-- Sound effects
-- Review answers feature
-- Export results
-
-Enjoy the quiz! 🎉 
