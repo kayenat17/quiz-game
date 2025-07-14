@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kay Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Floating decorative elements -->
+    <div class="floating-elements">
+        <div class="floating-emoji" style="--delay: 0s; --position: 10% 20%;">🌸</div>
+        <div class="floating-emoji" style="--delay: 2s; --position: 80% 15%;">✨</div>
+        <div class="floating-emoji" style="--delay: 4s; --position: 15% 80%;">💫</div>
+        <div class="floating-emoji" style="--delay: 6s; --position: 85% 75%;">🎨</div>
+        <div class="floating-emoji" style="--delay: 8s; --position: 50% 10%;">🌟</div>
+    </div>
+
+    <div class="container">
+        <!-- Decorative corner elements -->
+        <div class="corner-decoration top-left">🎯</div>
+        <div class="corner-decoration top-right">✨</div>
+        <div class="corner-decoration bottom-left">💫</div>
+        <div class="corner-decoration bottom-right">🎨</div>
+
+        <div id="start-screen" class="screen active">
+            <h3>🌊⋆🐚🫧</h3>
+            <h1>Quiz Adventure</h1>
+            <p>Embark on a magical journey of knowledge with fun crafted quiz! Test your wits and discover amazing facts along the way.</p>
+            <div class="feature-highlights">
+                <span class="feature-tag">🎯 Interactive</span>
+                <span class="feature-tag">✨ Witty</span>
+                <span class="feature-tag">🎨 Relaxing</span>
+                <span class="feature-tag">💫 Fun</span>
+            </div>
+            <button id="start-btn" class="btn">
+                <span class="btn-content">
+                    <span class="btn-icon">🚀</span>
+                    <span class="btn-text">Start Adventure</span>
+                </span>
+            </button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="header">
+                <div class="progress">
+                    <span id="question-counter">Question 1 of 10</span>
+                    <div class="progress-bar">
+                        <div id="progress-fill"></div>
+                    </div>
+                </div>
+                <div class="score">Score: <span id="current-score">0</span></div>
+            </div>
+
+            <div class="question-container">
+                <div class="question-sticker">💭</div>
+                <h2 id="question-text">What is the capital of France?</h2>
+                <div class="options">
+                    <button class="option" data-index="0">
+                        <span class="option-letter">A</span>
+                        <span class="option-text">London</span>
+                    </button>
+                    <button class="option" data-index="1">
+                        <span class="option-letter">B</span>
+                        <span class="option-text">Paris</span>
+                    </button>
+                    <button class="option" data-index="2">
+                        <span class="option-letter">C</span>
+                        <span class="option-text">Berlin</span>
+                    </button>
+                    <button class="option" data-index="3">
+                        <span class="option-letter">D</span>
+                        <span class="option-text">Madrid</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <button id="next-btn" class="btn" disabled>
+                    <span class="btn-content">
+                        <span class="btn-icon">➡️</span>
+                        <span class="btn-text">Next Question</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <div class="celebration-sticker">🎉</div>
+            <h1>Quiz Complete!</h1>
+            <div class="result-summary">
+                <div class="score-display">
+                    <h2>Your Amazing Score</h2>
+                    <div class="final-score">
+                        <span id="final-score">8</span>/<span id="total-questions">10</span>
+                    </div>
+                    <div class="percentage">
+                        <span id="percentage">80%</span>
+                    </div>
+                </div>
+                <div class="performance">
+                    <p id="performance-message">Great job! You did really well!</p>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button id="restart-btn" class="btn">
+                    <span class="btn-content">
+                        <span class="btn-icon">🔄</span>
+                        <span class="btn-text">Play Again</span>
+                    </span>
+                </button>
+                <button id="review-btn" class="btn secondary">
+                    <span class="btn-content">
+                        <span class="btn-icon">📋</span>
+                        <span class="btn-text">Review Answers</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
